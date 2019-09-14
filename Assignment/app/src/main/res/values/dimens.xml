@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="standard_10_margin">10dp</dimen>
+    <dimen name="standard_5_padding">5dp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="layout_margin_7">7dp</dimen>
+    <dimen name="corner_radius_5">5dp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="layout_margin_5">5dp</dimen>
+    <dimen name="layout_width_100">100dp</dimen>
+    <dimen name="layout_height_100">100dp</dimen>
+    <dimen name="layout_width_0">0dp</dimen>
+    <dimen name="layout_height_0">0dp</dimen>
+    <dimen name="layout_margin_10">10dp</dimen>
+    <dimen name="layout_width_7">7dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="min_height_35">35dp</dimen>
+    <dimen name="corner_radius_20">20dp</dimen>
+    <dimen name="layout_margin_8">8dp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="layout_height_147">147dp</dimen>
+    <dimen name="layout_width_150">150dp</dimen>
+    <dimen name="layout_height_33">33dp</dimen>
+    <dimen name="text_22">22sp</dimen>
+</resources>

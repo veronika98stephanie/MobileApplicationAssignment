@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/viewEventsOnMap"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="@string/toolbar_view_events_on_map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/addEventMenu"
+        android:icon="@drawable/add_event"
+        android:title="@string/toolbar_add_event"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/sortEvent"
+        android:icon="@drawable/sort_event"
+        android:title="@string/toolbar_sort_event"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="@string/toolbar_settings"
+        app:showAsAction="ifRoom" />
+
+</menu>

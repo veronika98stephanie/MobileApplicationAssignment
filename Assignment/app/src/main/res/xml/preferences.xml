@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="number"
+        android:key="notification_threshold"
+        android:summary="5 minutes"
+        android:title="@string/settings_notification_threshold" />
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="number"
+        android:key="notification_period"
+        android:summary="5 minutes"
+        android:title="@string/settings_notification_period" />
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="number"
+        android:key="remind_again"
+        android:summary="5 minutes"
+        android:title="@string/settings_remind_again_period" />
+
+</PreferenceScreen>

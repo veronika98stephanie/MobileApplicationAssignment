@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.EventEditActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="4"
+        app:rowCount="5"
+        app:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/txtEditDetailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="@string/event_title"
+            android:textSize="@dimen/text_14"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/txtEditStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="@string/start_date"
+            android:textSize="@dimen/text_14"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/txtEditEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="@string/end_date"
+            android:textSize="@dimen/text_14"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/txtEditVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="@string/venue"
+            android:textSize="@dimen/text_14"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/txtEditLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:text="@string/location"
+            android:textSize="@dimen/text_14"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/hint_event_title"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_14"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/etStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/hint_start_date"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_14"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:ignore="TextViewEdits" />
+
+        <TextView
+            android:id="@+id/etEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/hint_end_date"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_14"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:ignore="TextViewEdits" />
+
+
+        <EditText
+            android:id="@+id/etVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/hint_venue"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_14"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/hint_location"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_14"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <ImageView
+            android:id="@+id/selectStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="15"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="1"
+            app:srcCompat="@drawable/date"
+            android:focusable="true"
+            android:contentDescription="@string/description_select_start_date" />
+
+        <ImageView
+            android:id="@+id/selectEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="15"
+            app:layout_column="2"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/date"
+            android:focusable="true"
+            android:contentDescription="@string/description_select_end_date" />
+
+        <ImageView
+            android:id="@+id/selectStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="15"
+            app:layout_column="3"
+            app:layout_gravity="center"
+            app:layout_row="1"
+            app:srcCompat="@drawable/time"
+            android:contentDescription="@string/description_select_start_time"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/selectEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="15"
+            app:layout_column="3"
+            app:layout_gravity="center"
+            app:layout_row="2"
+            app:srcCompat="@drawable/time"
+            android:contentDescription="@string/description_select_end_time"
+            android:focusable="true" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_5"
+        app:columnCount="3"
+        app:rowCount="1">
+
+        <ImageView
+            android:id="@+id/imgEditMovie"
+            android:layout_width="@dimen/layout_width_100"
+            android:layout_height="@dimen/layout_height_100"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/movie"
+            android:contentDescription="@string/description_movie_image" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_columnWeight="5"
+            app:layout_row="0">
+
+            <TextView
+                android:id="@+id/txtEditMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:text="@string/n_a" />
+
+            <TextView
+                android:id="@+id/txtEditMovieYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                android:text="@string/n_a" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEventEditMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_movie"
+            app:layout_column="2"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5"
+            app:columnCount="2"
+            app:rowCount="1">
+
+            <TextView
+                android:id="@+id/txtEditAttendeeList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:text="@string/attendees_list"
+                android:textSize="@dimen/text_18"
+                app:layout_column="0"
+                app:layout_columnWeight="10" />
+
+            <Button
+                android:id="@+id/btnAddEventAttendee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_attendee"
+                app:layout_columnWeight="1" />
+
+        </android.support.v7.widget.GridLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewEditAttendees"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_147" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_10"
+            android:layout_marginEnd="@dimen/layout_margin_5"
+            android:layout_weight="1"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/btnEditCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin_5"
+            android:layout_marginEnd="@dimen/layout_margin_10"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>
